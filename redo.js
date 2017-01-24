@@ -13,7 +13,7 @@ const buildTree = () => {
   let selectedHeight = height.value
   let selectedChar = character.value
   for(let i = 1; i <= selectedHeight; i++){
-    console.log(space.repeat(selectedHeight - i) + selectedChar.repeat(i) + selectedChar.repeat(i - 1))
+    console.log(space.repeat(selectedHeight - i) + selectedChar.repeat(i + (i - 1)))
   }
 }
 
